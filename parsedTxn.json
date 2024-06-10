@@ -1,0 +1,125 @@
+{
+  "success": true,
+  "message": "Transaction details fetched successfully",
+  "result": {
+    "timestamp": "2024-06-04T16:38:13.000Z",
+    "fee": 0.00003,
+    "fee_payer": "DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc",
+    "signers": ["DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc"],
+    "signatures": [
+      "2B2McyYh4r9gcxLNagpgSCcm7akoXvQBzb6umMdnky7DoLtENbzC3sisAndajzMW2MXgnnb4tKCwy2srTWGw71h4"
+    ],
+    "protocol": {
+      "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "name": "PUMP"
+    },
+    "type": "BUY",
+    "status": "Success",
+    "actions": [
+      {
+        "info": {
+          "global": "4wTV1YmiEkRvAtNtsSGPtUrqRYQMe5SKy2uB4Jjaxnjf",
+          "feeRecipient": "CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM",
+          "mint": "6ja7f1bkVegArqSMvg6zsSPgM5F2G2ywhdFqATKrpump",
+          "bondingCurve": "8AEfV8fkJWMWYJjiamqeNC8EPDKJRdmGgWe9ATjobFrZ",
+          "associatedBondingCurve": "5Yuhpib2vGzba9LP9wh3hoanMeQeKsYXqueyTDpjwKrU",
+          "associatedUser": "vk5xLF4DsKnYhQmV1djfFvyCYZRJAhkxirAvTNxnndU",
+          "user": "DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc",
+          "systemProgram": "11111111111111111111111111111111",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "rent": "SysvarRent111111111111111111111111111111111",
+          "eventAuthority": "Ce6TQqeHC9p8KetsN6JsjHK7UTZk7nasjjnr7XxXp9F1",
+          "program": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+          "amount": 156013115391,
+          "maxSolCost": 6312500
+        },
+        "source_protocol": {
+          "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+          "name": "PUMP"
+        },
+        "type": "BUY"
+      },
+      {
+        "info": {},
+        "source_protocol": {
+          "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+          "name": "PUMP"
+        },
+        "type": "UNKNOWN",
+        "parent_protocol": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P"
+      },
+      {
+        "info": {
+          "amount": 156013.115391,
+          "amount_raw": 156013115391,
+          "sender": "8AEfV8fkJWMWYJjiamqeNC8EPDKJRdmGgWe9ATjobFrZ",
+          "receiver_associated_account": "vk5xLF4DsKnYhQmV1djfFvyCYZRJAhkxirAvTNxnndU",
+          "receiver": "DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc",
+          "token_address": "6ja7f1bkVegArqSMvg6zsSPgM5F2G2ywhdFqATKrpump"
+        },
+        "source_protocol": {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "name": "Token Program"
+        },
+        "type": "TOKEN_TRANSFER",
+        "parent_protocol": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P"
+      },
+      {
+        "info": {
+          "sender": "DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc",
+          "receiver": "HWEoBxYs7ssKuudEjzjmpfJVX7Dvi7wescFsVx2L5yoY",
+          "amount": 0.003,
+          "amount_raw": 3000000
+        },
+        "source_protocol": {
+          "address": "11111111111111111111111111111111",
+          "name": "SYSTEM_PROGRAM"
+        },
+        "type": "SOL_TRANSFER"
+      },
+      {
+        "info": {
+          "sender": "DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc",
+          "receiver": "8AEfV8fkJWMWYJjiamqeNC8EPDKJRdmGgWe9ATjobFrZ",
+          "amount": 0.004902458,
+          "amount_raw": 4902458
+        },
+        "source_protocol": {
+          "address": "11111111111111111111111111111111",
+          "name": "SYSTEM_PROGRAM"
+        },
+        "type": "SOL_TRANSFER",
+        "parent_protocol": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P"
+      },
+      {
+        "info": {
+          "sender": "DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc",
+          "receiver": "CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM",
+          "amount": 0.000049024,
+          "amount_raw": 49024
+        },
+        "source_protocol": {
+          "address": "11111111111111111111111111111111",
+          "name": "SYSTEM_PROGRAM"
+        },
+        "type": "SOL_TRANSFER",
+        "parent_protocol": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P"
+      }
+    ],
+    "events": [
+      {
+        "data": {
+          "mint": "6ja7f1bkVegArqSMvg6zsSPgM5F2G2ywhdFqATKrpump",
+          "solAmount": 4902458,
+          "tokenAmount": 156013115391,
+          "isBuy": true,
+          "user": "DgUga5dUUsc8YFuQUZ6DAjvvayymaj6ZrWb38VYvM3jc",
+          "timestamp": 1717519093,
+          "virtualSolReserves": 31806825518,
+          "virtualTokenReserves": 1012046926369795
+        },
+        "name": "TradeEvent"
+      }
+    ]
+  }
+}
