@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 const getParsedTransaction = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         let myHeaders = new Headers();
-        myHeaders.append("x-api-key", "pJvscDs57jZbepGR");
+        myHeaders.append("x-api-key", "API_KEY");
         let requestOptions = {
             method: "GET",
             headers: myHeaders,
