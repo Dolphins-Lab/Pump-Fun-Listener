@@ -2,7 +2,7 @@ const getParsedTransaction = async () => {
   try {
     let myHeaders = new Headers();
 
-    myHeaders.append("x-api-key", "pJvscDs57jZbepGR");
+    myHeaders.append("x-api-key", "API_KEY");
 
     let requestOptions = {
       method: "GET",
