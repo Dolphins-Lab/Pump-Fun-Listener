@@ -15,5 +15,9 @@
     "bs58": "^5.0.0",
     "esrun": "^3.2.26",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "tslib": "^2.6.3"
   }
 }

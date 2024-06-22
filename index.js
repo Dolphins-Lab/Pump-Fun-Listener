@@ -11,6 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const web3_js_1 = require("@solana/web3.js");
 const web3_js_2 = require("@solana/web3.js");
+const parseTransaction_1 = require("./parseTransaction");
 const startMonitoringPumpFun = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // PUMP FUN ADDRESS
@@ -19,14 +20,24 @@ const startMonitoringPumpFun = () => __awaiter(void 0, void 0, void 0, function*
         const connection = new web3_js_2.Connection("https://api.mainnet-beta.solana.com", {
             wsEndpoint: "wss://api.mainnet-beta.solana.com",
         });
-        connection.onLogs(publicKey, (logs, context) => {
+        connection.onLogs(publicKey, (logs, context) => __awaiter(void 0, void 0, void 0, function* () {
             if (logs.logs &&
                 // Look for this instruction in the logs
                 logs.logs.some((log) => log.includes("Program log: Instruction: InitializeMint2"))) {
-                console.log("Logs:", logs);
-                console.log("Context:", context);
+                console.log(logs.signature, " Received Signature");
+                // console.log(logs, "Logs");
+                console.log(context, "Context");
+                const signature = logs.signature;
+                if (signature) {
+                    const response = yield (0, parseTransaction_1.getParsedTransaction)(String(signature));
+                    if (response !== null) {
+                        const { data, poolInfoAddress } = response;
+                        console.log(data, "Parsed Transaction Details");
+                        console.log("Pool Info Address:", poolInfoAddress);
+                    }
+                }
             }
-        }, "confirmed");
+        }), "confirmed");
     }
     catch (error) {
         console.log(error);
