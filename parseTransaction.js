@@ -15,7 +15,7 @@ const getParsedTransaction = (txnId) => __awaiter(void 0, void 0, void 0, functi
     try {
         const url = `https://api.shyft.to/sol/v1/transaction/parsed?network=mainnet-beta&txn_signature=${txnId}`;
         const myHeaders = new Headers();
-        myHeaders.append("x-api-key", "pJvscDs57jZbepGR");
+        myHeaders.append("x-api-key", "SHYFT_API_KEY");
         const requestOptions = {
             method: "GET",
             headers: myHeaders,

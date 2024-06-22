@@ -16,7 +16,7 @@ const startMonitoringPumpFun = () => __awaiter(void 0, void 0, void 0, function*
     try {
         // PUMP FUN ADDRESS
         const publicKey = new web3_js_1.PublicKey("6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P");
-        // Use default RPC but helius or other provider is recommended
+        // Use default RPC but shyft or helius or other provider is recommended
         const connection = new web3_js_2.Connection("https://api.mainnet-beta.solana.com", {
             wsEndpoint: "wss://api.mainnet-beta.solana.com",
         });
